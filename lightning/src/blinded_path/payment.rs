@@ -84,7 +84,7 @@ impl_writeable!(BlindedPayInfo, {
 /// recipient.
 #[derive(Clone, Debug, Hash, PartialEq, Eq)]
 pub struct BlindedPaymentPath {
-	pub(super) inner_path: BlindedPath,
+	pub inner_path: BlindedPath,
 	/// The [`BlindedPayInfo`] used to pay this blinded path.
 	pub payinfo: BlindedPayInfo,
 }
